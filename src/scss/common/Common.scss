@@ -1,0 +1,46 @@
+html,body {
+    font-size: 100%;
+    background-color: $color-black-900;
+    color: $color-white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $fw-regular;
+    @include tablet {
+        font-size: 80%;
+    }
+}
+
+.wrapper {
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.mb {
+    &-250 {
+        margin-bottom: rem(250);
+    }
+    &-160 {
+        margin-bottom: rem(160);
+    }
+    &-120 {
+        margin-bottom: rem(120);
+    }
+    &-80 {
+        margin-bottom: rem(80);
+    }
+    &-64 {
+        margin-bottom: rem(64);
+    }
+    &-56 {
+        margin-bottom: rem(56);
+    }
+    &-40 {
+        margin-bottom: rem(40);
+    }
+    &-24 {
+        margin-bottom: rem(24);
+    }
+    &-16 {
+        margin-bottom: rem(16);
+    }
+}

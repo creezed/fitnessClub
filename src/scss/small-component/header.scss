@@ -1,0 +1,36 @@
+.header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    transition: $transition;
+    &--wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-nav {
+        display: flex;
+        align-items: center;
+        gap: rem(90);
+        &__link {
+            color: $color-white;
+            transition: $transition;
+            &:hover {
+                color: $color-main;
+            }
+		}
+    }
+    &--active {
+        background-color: $color-black-900;
+        padding-top: 1.2%;
+        padding-bottom: 1.2%;
+    }
+    @include tablet {
+        display: none;
+    }
+}

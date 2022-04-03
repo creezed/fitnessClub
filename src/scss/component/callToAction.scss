@@ -1,0 +1,29 @@
+.callToAction {
+    margin: rem(250) 0;
+    position: relative;
+    padding: rem(100) 0;
+    background-color: $color-black-700;
+    &--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    &-text {
+        z-index: 11;
+        max-width: 782px;
+    }
+    &-img {
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        @include tablet {
+            height: 500px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+}

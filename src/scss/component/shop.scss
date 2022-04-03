@@ -1,0 +1,50 @@
+.shop {
+    margin-bottom: rem(160);
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            z-index: 11;
+            position: relative;
+            flex: 1 0;
+            max-width: 370px;
+            min-width: 300px;
+            height: 320px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: $inner-shadow;
+            overflow: hidden;
+            & > .headline {
+                position: absolute;
+                left: 50%;
+                bottom: 10%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &-variant {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 50px;
+        background-color: $color-main;
+        color: $color-white;
+        border-radius: 2px;
+        font-size: $fz-m;
+    }
+
+    &-price {
+        font-weight: $fw-regular;
+    }
+}

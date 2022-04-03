@@ -1,0 +1,61 @@
+.headline {
+    color: inherit;
+    &--typo-xxl { // 80px
+        font-size: $fz-xxl;
+        font-size: $fw-bold;
+        @include mobile {
+            font-size: 40px;
+        }
+    }
+    &--typo-xl { // 45px
+        font-size: $fz-xl;
+        font-weight: $fw-semiBold;
+    }
+    &--typo-l { // 34px
+        font-size: $fz-l;
+    }
+    &--typo-m { //24px
+        font-size: $fz-m;
+        font-weight: $fw-semiBold;
+        &_bold {
+            font-weight: $fw-bold;
+        }
+    }
+    &--color-main {
+        color: $color-main;
+    }
+}
+
+.body__text {
+    color: inherit;
+    &--typo-l { // 34px
+        font-size: $fz-l;
+        font-weight: $fw-medium;
+    }
+    &--typo-m { //24px
+        font-size: $fz-m;
+        font-weight: $fw-regular;
+        &_justify {
+            text-align: justify;
+        }
+    }
+}
+
+.text-block {
+    display: flex;
+    align-items: center;
+    &__circle {
+        width: rem(120);
+        height: rem(120);
+        background-color: $color-main;
+        border-radius: 50%;
+        margin-right: -2.5%;
+        &--modal {
+            width: 80px;
+            height: 80px;
+        }
+        @include mobile {
+            margin-right: -10%;
+        }
+    }
+}

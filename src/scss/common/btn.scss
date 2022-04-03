@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+    background-color: $color-main;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    color: $color-white;
+    cursor: pointer;
+    transform: translateY(0px);
+    transition: $transition;
+    &:hover {
+        border: 1px solid $color-main;
+        background-color: transparent;
+    }
+    &:active {
+        transform: translateY(3px);
+    }
+    &--header {
+        padding: 10px 30px;
+        font-weight: 400;
+        font-size: $fz-m;
+    }
+    &--hero {
+        padding: 15px 70px;
+        font-weight: 400;
+        font-size: $fz-l;
+    }
+    &--trainer {
+        padding: 15px 22px;
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid $color-white;
+        font-size: $fz-m;
+    }
+    &--CTA {
+        padding: 20px 80px;
+        text-transform: uppercase;
+        font-size: $fz-m;
+    }
+    &--modal {
+        padding: 14px 20px;
+        font-size: $fz-m;
+    }
+    &--contact{
+        padding: 26px 94px;
+        text-transform: uppercase;
+        font-size: $fz-m;
+    }
+}

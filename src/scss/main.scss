@@ -1,0 +1,28 @@
+// Scss
+@import './scss/_zeroStyle';
+@import './scss/_function';
+@import './scss/_mixin';
+@import './scss/_var';
+
+// Libs
+
+@import './libs/swiper.min';
+
+// Common
+
+@import './common/Common';
+@import './common/btn';
+@import './common/typography';
+
+// Component
+@import "./small-component/header";
+@import "./component/hero";
+@import "./component/about.scss";
+@import "./component/trainer.scss";
+@import "./small-component/modal.scss";
+@import "./component/callToAction.scss";
+@import "./component/shop.scss";
+@import "./component/contact.scss";
+@import "./component/footer.scss";
+@import "./small-component/burger.scss";
+@import "./small-component/navbar.scss";

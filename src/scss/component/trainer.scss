@@ -1,0 +1,85 @@
+.trainer {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-pagination {
+        display: flex;
+        gap: 10px;
+        @include mobile {
+            display: none;
+        }
+        &__btn  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            background-color: transparent;
+            border: 1px solid $color-white;
+            color: $color-white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: $transition;
+            &--left {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+            &:hover {
+                background-color: $color-main;
+                border: 1px solid transparent;
+            }
+        }
+    }
+}
+
+.trainer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    &__picture {
+        &--wrapper {
+            position: relative;
+            overflow: hidden;
+            max-width: 270px;
+            height: 300px;
+            display: block;
+            box-shadow: $inner-shadow;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0,0,0,.2);
+            }
+            & > .btn--trainer {
+                z-index: 1;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                transition: $transition;
+                pointer-events: none;
+                
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        .btn--trainer  {
+            z-index: 10;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+}
